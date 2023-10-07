@@ -11,14 +11,21 @@ function StartGameScreen() {
         autoCapitalize="none"
         autoCorrect={false}
       />
-      <PrimaryButton title="Reset" />
-      <PrimaryButton title="Confirm" />
+      <View style={styles.buttonsContainer}>
+        <View style={styles.buttonContainer}>
+          <PrimaryButton title="Reset" />
+        </View>
+        <View style={styles.buttonContainer}>
+          <PrimaryButton title="Confirm" />
+        </View>
+      </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
+    alignItems: 'center',
     padding: 16,
     marginTop: 100,
     marginHorizontal: 24,
@@ -40,6 +47,14 @@ const styles = StyleSheet.create({
     marginVertical: 8,
     fontWeight: 'bold',
     textAlign: 'center'
+  },
+  buttonsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 16
+  },
+  buttonContainer: {
+    flex: 1
   }
 });
 
