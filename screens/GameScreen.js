@@ -107,7 +107,8 @@ function GameScreen({ userChoice, onGameOver }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 12
+    padding: 12,
+    alignItems: 'center'
   },
   buttonsContainer: {
     flexDirection: 'row',
